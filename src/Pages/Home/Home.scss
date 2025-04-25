@@ -1,0 +1,59 @@
+@import '../../App.css';
+
+.home__page {
+
+  .home__header {
+    background-color: #1423DC;
+    color: #E3E3E3;
+    width: 100%;
+    height: 100vh;
+    
+    .header__content {
+      height: 100%;
+      padding-top: 80px;
+      position: relative;
+
+      .header__text {
+        padding: 70px;
+        max-width: 80%;
+        z-index: 998;
+        position: relative;
+        color: #FFFFFF;
+
+        .header__title {
+          font-size: 3rem;
+          font-weight: 900;
+          margin-bottom: 30px;
+        }
+
+        .header__description {
+          padding-left: 100px;
+          max-width: 60%;
+          font-weight: 400;
+          margin-bottom: 20px;
+          line-height: 1.5rem;
+        }
+      }
+
+      .header__img img:first-child {
+        position: absolute;
+        width: 10%;
+        left: 20px;
+        bottom: 0;
+        z-index: 998;
+      }
+
+      .header__img img:last-child {
+        position: absolute;
+        width: 50%;
+        right: 0;
+        bottom: 0;
+        z-index: 997;
+      }
+    }
+  }
+
+  .home__content {
+    padding: 0 70px;
+  }
+}

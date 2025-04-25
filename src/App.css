@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Public Sans', sans-serif;
+}
+
+:root {
+  --color-blue: #1423DC;
+  --color-beige: #E3E3E3;
+
+  --separator-width: .5px;
+  --separator-height: 40px;
+}

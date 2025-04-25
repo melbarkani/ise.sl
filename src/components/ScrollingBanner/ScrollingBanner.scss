@@ -1,0 +1,90 @@
+.banner-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: white;
+  border-bottom: 1px solid rgba(80, 78, 253, 0.2);
+  padding: 20px 70px;
+  color: #1e1bff;
+  font-family: 'Segoe UI', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.pause-btn {
+  background: transparent;
+  border: none;
+  color: #1e1bff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  .pause-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+
+  // Réserve une largeur fixe pour le texte du bouton
+  &::after {
+    content: attr(data-text);
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    display: inline-block;
+    font-weight: inherit;
+    font-size: inherit;
+  }
+
+  .btn-label {
+    display: inline-block;
+    width: 5px; // ajustable selon les longueurs max
+    text-align: left;
+  }
+
+  .fade {
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }  
+}
+
+hr {
+  border: none;
+  width: var(--separator-width);
+  height: var(--separator-height);
+  background-color: #c5c1ff;
+}
+
+.banner-text-wrapper {
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+  height: 24px;
+}
+
+.banner-text {
+  position: absolute;
+  width: 100%;
+  animation: slideIn 0.5s ease forwards;
+  font-size: 18px;
+  font-weight: 550;
+  white-space: nowrap;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.3s ease;
+  }
+}

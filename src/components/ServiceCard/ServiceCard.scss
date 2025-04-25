@@ -1,0 +1,49 @@
+.service__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  color: var(--color-blue);
+  border: 1px solid rgba(80, 78, 253, 0.2);
+  border-right: .5px solid rgba(80, 78, 253, 0.2);
+  padding: 2rem 1rem 1rem 1rem;
+  width: 100%;
+  max-width: 200px;
+  height: 300px;
+  max-height: 350px;
+  transition: all .5s ease;
+
+  &:last-child {
+    border-right: 1px solid rgba(80, 78, 253, 0.2);
+  }
+
+  &:hover {
+    background-color: var(--color-blue);
+    color: #fff;
+    cursor: pointer;
+    //transform: scale(1.05);
+
+    .service__icon img {
+      content: url('public/assets/window_white.png');
+    }
+  }
+
+  .service__icon {
+    margin-bottom: 1.5rem;
+    text-align: center;
+
+    img, svg {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  .service__title {
+    font-size: 1.25rem;
+    font-weight: lighter;
+  }
+
+  .service__description {
+    font-size: 1rem;
+  }
+}
