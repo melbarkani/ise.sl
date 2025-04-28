@@ -11,12 +11,12 @@ import Contact from "../../layouts/Contact-Section/Contact";
 const Home = () => {
   return (
     <div className="home__page">
-      <Hero />
-      <AnimatedLine />
-      <ScrollingBanner />
-      <Services />
-      <About />
-      <Contact />
+      <main role="main" className="main-content">
+        <Hero />
+        <Services />
+        <About />
+        <Contact />
+      </main>
     </div>
   );
 }

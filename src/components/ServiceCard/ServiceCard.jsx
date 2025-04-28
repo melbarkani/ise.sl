@@ -3,10 +3,10 @@ import "./ServiceCard.scss";
 
 const ServiceCard = ({ title, description, icon }) => {
   return (
-    <div className="service__card">
+    <a className="service__card">
       <div className="service__icon">{icon}</div>
       <h2 className="service__title">{title}</h2>
-    </div>
+    </a>
   );
 }
 

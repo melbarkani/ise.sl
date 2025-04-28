@@ -37,31 +37,40 @@ const Navbar = () => {
 
   return (
     <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-      <div className="navbar__left">
-        <div className="logo">
+      <div className="header__container">
+        
+        <div className="header__logo">
           <img className={`${scrolled ? 'scrolled' : ''}`} src="/public/assets/logo.png" alt="Logo" />
         </div>
-        <div className="navbar__propal__btn">
-          <button className="create__propal__btn">
-            <img className="quote-icon" src="/assets/quote.png" alt="Quote" />
-            <span>{t('navbar.quote')}</span>
-          </button>
+
+        {/* AJOUT ici le bouton juste après le logo */}
+        <button className="create__propal__btn">
+          <span>Solicitar presupuesto</span>
+        </button>
+
+        {/* Puis les liens à droite */}
+        <div className="header__menu">
+          <nav className="menu-nav">
+            <ul className="menu-nav__list">
+              <li className="menu-nav__item push-right">
+                <a href="">Servicios</a>
+              </li>
+              <li className="menu-nav__item">
+                <a href="">Sobre nosotros</a>
+              </li>
+              <li className="menu-nav__item">
+                <a href="">Contact</a>
+              </li>
+              <li className="menu-nav__item">
+                <button className="lang__switcher" onClick={toggleLanguage}>
+                  {getNextLangLabel()}
+                </button>
+              </li>
+            </ul>
+          </nav>
         </div>
+
       </div>
-      <nav className="navbar__right">
-        <ul className="navbar__links">
-          <li>
-            <a href="">{t('navbar.services')}</a>
-            <a href="">{t('navbar.who')}</a>
-            <a href="">{t('navbar.contact')}</a>
-          </li>
-          <li>
-            <button className="lang__switcher" onClick={toggleLanguage}>
-              {getNextLangLabel()}
-            </button>
-          </li>
-        </ul>
-      </nav>
     </header>
   );
 }

@@ -4,25 +4,25 @@ import "./Contact.scss";
 
 const Contact = () => {
   return (
-    <section className="help-section">
-      <div className="help-section__left">
+    <section className="contact__section">
+      <div className="contact__section__content">
         <h2>¿Como contactarnos?</h2>
-      </div>
-      <div className="help-section__right">
-        <div className="help-card">
-          <img src="/public/assets/question.png" className="help-card__icon" />
-          <h3>FAQ</h3>
-          <p>Encuentra la respuesta a las preguntas que más nos hacen</p>
-        </div>
-        <div className="help-card">
-        <img src="/public/assets/client-service.png" className="help-card__icon" />
-          <h3>Atención al cliente</h3>
-          <p>Contacta con nuestro equipo para ser orientado según tus necesidades</p>
-        </div>
-        <div className="help-card">
-        <img src="/public/assets/question.png" className="help-card__icon" />
-          <h3>Servicio de asistencia</h3>
-          <p>¿Una situación urgente? Nuestro servicio de asistencia te responderá rápidamente</p>
+        <div className="contact__cards">
+          <a className="contact-card">
+            <img src="/public/assets/question.png" className="help-card__icon" />
+            <span>FAQ</span>
+            <p>Encuentra la respuesta a las preguntas que más nos hacen</p>
+          </a>
+          <a className="contact-card">
+            <img src="/public/assets/client-service.png" className="help-card__icon" />
+            <span>Atención al cliente</span>
+            <p>Contacta con nuestro equipo para ser orientado según tus necesidades</p>
+          </a>
+          <a className="contact-card">
+            <img src="/public/assets/question.png" className="help-card__icon" />
+            <span>Asistencia</span>
+            <p>¿Una situación urgente? Nuestro servicio de asistencia te responderá rápidamente</p>
+          </a>
         </div>
       </div>
     </section>

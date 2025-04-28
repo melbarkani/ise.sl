@@ -1,18 +1,31 @@
 import React from "react";
 import "./Hero.scss";
-import i18n from "../../i18n";
-import { useTranslation } from "react-i18next";
+//import i18n from "../../i18n";
+//import { useTranslation } from "react-i18next";
+
+import ScrollingBanner from "../../components/ScrollingBanner/ScrollingBanner";
 
 const Hero = () => {
-  const { t } = useTranslation();
+  //const { t } = useTranslation();
 
   return (
     <section className="hero">
       <div className="hero__content">
-        <h1 className="hero__title">{t("title")}</h1>
-        <p className="hero__description">{t("description")}</p>
+        <h1 className="hero__title h1">
+          {/*{t("title")}*/}
+          <span>Soluciones eléctricas inteligentes, en España y Alemania</span>
+        </h1>
+        <p className="hero__description p-1">
+          {/*{t("description")}*/}
+          En Instalaciones y Servicios El Barkani S.L. combinamis tecnología, experiencia y compromiso para ofrecer instalaciones seguras, automatización y mantenimiento de confianza.
+        </p>
+        <picture className="hero__media">
+          <img src="/public/assets/hero-img.jpg" alt="hero image" />
+        </picture>
+        {/*<img src="/public/assets/hero-img.jpg" alt="Hero" />*/}
       </div>
-      <img src="/public/assets/hero-img.jpg" alt="Hero" />
+
+      <ScrollingBanner />
     </section>
   );
 }

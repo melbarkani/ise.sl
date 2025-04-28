@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="about__page">
       <div className="about__title">
-        <h1>¿ Quiénes somos ?</h1>
+        <h2>¿ Quiénes somos ?</h2>
       </div>
       <div className="about__countries">
         <div className="spain">

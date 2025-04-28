@@ -8,8 +8,11 @@
 
   .about__title {
     grid-column: 1 / span 6;
-    color: #1e1bff;
+    color: var(--blue-color);
+    margin-top: 5rem;
     margin-bottom: 2rem;
+    font-size: 3.15rem;
+    font-weight: 400;
   }
 
   .about__countries {
@@ -21,7 +24,7 @@
     -ms-flex-align: start;
     align-items: flex-start;
     gap: 2.38rem;
-    color: var(--color-blue);
+    color: var(--blue-color);
 
     .spain {
       position: relative;
