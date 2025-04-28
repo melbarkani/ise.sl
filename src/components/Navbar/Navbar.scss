@@ -34,8 +34,6 @@
       transition: background-color 0.2s ease, color 0.2s ease;
       display: flex;
       align-items: center;
-      justify-content: center;
-      text-align: center;
 
       &:hover {
         background-color: var(--color-beige);
@@ -46,6 +44,17 @@
     .create__propal__btn {
       @extend .btn;
       margin-left: 5rem;
+      display: flex;
+      align-items: center;
+
+      & img {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+
+      & span {
+        margin-left: 10px;
+      }
     }
 
     .header__menu {

@@ -4,8 +4,8 @@
   gap: 50px;
   border-bottom: 1px solid rgba(20, 35, 220, .2);
   background-color: #fff;
-  padding: 20px 70px;
-  color: #1e1bff;
+  padding: 30px 70px;
+  color: var(--blue-color);
   font-family: 'Segoe UI', sans-serif;
   transition: all 0.3s ease;
 }
@@ -13,7 +13,7 @@
 .pause-btn {
   background: transparent;
   border: none;
-  color: #1e1bff;
+  color: var(--blue-color);
   display: flex;
   align-items: center;
   cursor: pointer;

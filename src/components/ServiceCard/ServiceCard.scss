@@ -13,10 +13,10 @@
     border-right: none;
   }
 
-  &:hover {
+  li:hover {
     transition: background-color .25s ease-in;
 
-    .service__icon img {
+    & img {
       content: url('public/assets/window_white.png');
     }
   }

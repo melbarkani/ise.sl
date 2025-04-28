@@ -45,6 +45,7 @@ const Navbar = () => {
 
         {/* AJOUT ici le bouton juste après le logo */}
         <button className="create__propal__btn">
+          <img className="quote-icon" src="/assets/quote.png" alt="Quote" />
           <span>Solicitar presupuesto</span>
         </button>
 

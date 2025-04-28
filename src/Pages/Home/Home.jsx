@@ -7,6 +7,7 @@ import ScrollingBanner from "../../components/ScrollingBanner/ScrollingBanner";
 import Services from "../../layouts/Services-Section/Services";
 import About from "../../layouts/About-Section/About";
 import Contact from "../../layouts/Contact-Section/Contact";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
         <Services />
         <About />
         <Contact />
+        <Footer />
       </main>
     </div>
   );
