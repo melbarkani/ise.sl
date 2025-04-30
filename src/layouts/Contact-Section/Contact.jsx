@@ -5,32 +5,22 @@ import "./Contact.scss";
 const Contact = () => {
   return (
     <section className="contact__section">
-      {/*}
-      <svg viewBox="0 0 400 1000" className="animated__line__contact">
-        <path
-          d="M -1245 0 L -1245 999"
-          stroke="#1423DC"
-          strokeWidth="2"
-          fill="none"
-        />
-      </svg>
-      */}
       <div className="contact__section__content">
-        <h2>¿Como contactarnos?</h2>
+        <h2>¿Cómo contactarnos?</h2>
         <div className="contact__cards">
-          <a className="contact-card">
-            <img src="/public/assets/question.png" className="help-card__icon" />
-            <span>FAQ</span>
+          <a className="contact-card" href="#faq">
+            <img src="/assets/question.png" alt="FAQ Icon" className="help-card__icon" />
+            <span>Preguntas frecuentes</span>
             <p>Encuentra la respuesta a las preguntas que más nos hacen</p>
           </a>
-          <a className="contact-card">
-            <img src="/public/assets/client-service.png" className="help-card__icon" />
-            <span>Atención al cliente</span>
+          <a className="contact-card" href="#message">
+            <img src="/assets/client-service.png" alt="Client Service Icon" className="help-card__icon" />
+            <span>Envíanos un mensaje</span>
             <p>Contacta con nuestro equipo para ser orientado según tus necesidades</p>
           </a>
-          <a className="contact-card">
-            <img src="/public/assets/question.png" className="help-card__icon" />
-            <span>Asistencia</span>
+          <a className="contact-card" href="#call">
+            <img src="/assets/question.png" alt="Quick Assistance Icon" className="help-card__icon" />
+            <span>Asistencia rápida por llamada</span>
             <p>¿Una situación urgente? Nuestro servicio de asistencia te responderá rápidamente</p>
           </a>
         </div>

@@ -28,50 +28,37 @@ const Services = () => {
               <ServiceCard
                 title="Instalaciones eléctricas"
                 description="Realizamos instalaciones eléctricas residenciales, comerciales e industriales."
-                icon={<img
-                  src="/public/assets/electric-plug.png"
-                  alt="Electric plug"
-                />}
+                icon="/public/assets/electric-plug.png"
+                iconHover="/public/assets/electric-plug_white.png"
               />
             </li>
             <li>
               <ServiceCard
                 title="Automatización KNX"
                 description="Especialistas en automatización KNX y sistemas Bus."
-                icon={<img
-                  src="/public/assets/automation.png"
-                  alt="Automation"
-                />}
+                icon="/public/assets/automation.png"
               />
             </li>
             <li>
               <ServiceCard
                 title="Ventanas eléctricas"
                 description="Instalación de ventanas eléctricas y ventilación natural inteligente."
-                icon={<img
-                  src="/public/assets/window.png"
-                  alt="Window"
-                />}
+                icon="/public/assets/window.png"
+                iconHover="/public/assets/window_white.png"
               />
             </li>
             <li>
               <ServiceCard
                 title="Mantenimiento eléctrico"
                 description="Ofrecemos mantenimiento eléctrico y reformas técnicas."
-                icon={<img
-                  src="/public/assets/maintenance.png"
-                  alt="Maintenance"
-                />}
+                icon="/public/assets/maintenance.png"
               />
             </li>
             <li>
               <ServiceCard
                 title="Soluciones técnicas"
                 description="Proporcionamos soluciones técnicas modernas, seguras y adaptadas."
-                icon={<img
-                  src="/public/assets/solutions.png"
-                  alt="Solutions"
-                />}
+                icon="/public/assets/solutions.png"
               />
             </li>
           </ul>

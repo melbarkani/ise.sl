@@ -8,17 +8,10 @@
   -ms-flex-align: center;
   align-items: center;
   height: 100%;
+  padding: 40px 20px 20px;
 
   &:not(:last-child) {
     border-right: none;
-  }
-
-  li:hover {
-    transition: background-color .25s ease-in;
-
-    & img {
-      content: url('public/assets/window_white.png');
-    }
   }
 
   .service__icon {
