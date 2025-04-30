@@ -8,6 +8,8 @@
   color: var(--blue-color);
   font-family: 'Segoe UI', sans-serif;
   transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
 }
 
 .pause-btn {

@@ -3,10 +3,11 @@ import { useEffect, useState } from "react"
 
 import './Navbar.scss';
 import i18n from "../../i18n";
-import { useTranslation } from "react-i18next";
+//import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
-  const { t } = useTranslation();
+  //const { t } = useTranslation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -50,9 +51,17 @@ const Navbar = () => {
         </button>
 
         {/* Puis les liens à droite */}
-        <div className="header__menu">
+        <div className={`header__menu ${isMenuOpen ? 'open' : ''}`}>
+          <button className="burger__menu" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            ☰
+          </button>
           <nav className="menu-nav">
             <ul className="menu-nav__list">
+              <li>
+                <button className="phone__number">
+                  <span>+34 602 62 97 56</span>
+                </button>
+              </li>
               <li className="menu-nav__item push-right">
                 <a href="">Servicios</a>
               </li>

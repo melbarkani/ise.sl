@@ -4,9 +4,19 @@ import "./About.scss";
 const About = () => {
   return (
     <div className="about__page">
-      <div className="background"></div>
+      <div className="about__background"></div>
+      {/*
+      <svg viewBox="0 0 400 1000" className="animated__line__about">
+        <path
+          d="M 1016 0 L 1016 720 Q 1016 820 916 820 L -700 820 Q -800 820 -800 920 L -800 1000"
+          stroke="#1423DC"
+          strokeWidth="2"
+          fill="none"
+        />
+      </svg>
+      */}
       <div className="about__title">
-        <h2>¿ Quiénes somos ?</h2>
+        <h2>Sobre Nosotros</h2>
       </div>
       <div className="about__countries">
         <div className="spain">

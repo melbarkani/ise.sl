@@ -49,12 +49,28 @@
       margin: var(--hero-text-margin);
       padding: var(--hero-text-padding);
       width: var(--hero-text-width);
+      z-index: 1;
 
       &.p-1 {
         font-family: Public sans, sans-serif;
         font-size: 1.2rem;
         font-weight: 400;
         line-height: 150%;
+      }
+    }
+
+    svg {
+      position: absolute;
+      width: 30%;
+      height: 100%;
+      bottom: 0;
+      left: 0;
+      padding-left: 70px;
+
+      .animated-line-path {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 4;
       }
     }
 

@@ -1,7 +1,15 @@
 .service__page {
-  padding: 70px 0;
   overflow: hidden;
   position: relative;
+  padding: 0 0 70px 0;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    padding-left: 70px;
+  }
 
   .service__content {
     position: relative;

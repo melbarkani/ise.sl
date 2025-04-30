@@ -2,9 +2,21 @@ import React from "react";
 import './Services.scss';
 import ServiceCard from "../../components/ServiceCard/ServiceCard";
 
-const Services = () => {
+const Services = () => {  
+
   return (
     <div className="service__page">
+      {/*
+        <svg viewBox="0 0 400 1000" className="animated__line_services">
+          <path
+            d="M -805 0 L -805 80 Q -805 100 -785 100 L 1000 100 Q 1020 100 1020 120 L 1020 999"
+            stroke="#1423DC"
+            strokeWidth="2"
+            strokeLinecap="round"
+            fill="none"
+          />
+        </svg>
+      */}
       <div className="service__content">
         <div className="services__title fadeup">
           <h2>¿ Como podemos ayudarle ?</h2>

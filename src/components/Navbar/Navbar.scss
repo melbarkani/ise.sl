@@ -7,6 +7,7 @@
   background-color: var(--nav-background-color);
   color: var(--nav-text-color);
   transition: background-color 0.2s ease;
+  overflow: hidden;
 
   .header__container {
     display: flex;
@@ -70,6 +71,10 @@
           align-items: center;
           gap: 2.2rem;
 
+          .phone__number {
+            @extend .btn;
+          }
+
           a {
             color: var(--nav-text-color);
             text-decoration: none;
@@ -85,4 +90,80 @@
       }
     }
   }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    padding: 30px 40px;
+
+    .header__container {
+      .create__propal__btn {
+        margin-left: 2rem;
+        span {
+          display: none; // Icône seule sur tablette
+        }
+      }
+
+      .header__menu {
+        .menu-nav__list {
+          gap: 1rem;
+
+          li:not(.menu-nav__item) {
+            display: none; // On cache le téléphone sur tablette
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 20px;
+
+    .header__container {
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .create__propal__btn {
+        margin: 0.5rem 0;
+        span {
+          display: none; // icône uniquement
+        }
+      }
+
+      .header__menu {
+        display: none; // cacher le menu principal
+
+        &.open {
+          display: block;
+          width: 100%;
+          margin-top: 1rem;
+
+          .menu-nav__list {
+            flex-direction: column;
+            gap: 1rem;
+
+            .menu-nav__item {
+              text-align: left;
+            }
+          }
+        }
+      }
+
+      .burger__menu {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        color: var(--nav-text-color);
+      }
+    }
+  }
+}
+
+.burger__menu {
+  display: none; // caché en desktop
 }

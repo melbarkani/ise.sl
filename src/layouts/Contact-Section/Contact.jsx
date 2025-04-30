@@ -5,6 +5,16 @@ import "./Contact.scss";
 const Contact = () => {
   return (
     <section className="contact__section">
+      {/*}
+      <svg viewBox="0 0 400 1000" className="animated__line__contact">
+        <path
+          d="M -1245 0 L -1245 999"
+          stroke="#1423DC"
+          strokeWidth="2"
+          fill="none"
+        />
+      </svg>
+      */}
       <div className="contact__section__content">
         <h2>¿Como contactarnos?</h2>
         <div className="contact__cards">

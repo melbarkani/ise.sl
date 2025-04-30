@@ -1,8 +1,9 @@
 import React from "react";
 import "./Home.scss";
 
-import Hero from "../../layouts/Hero/Hero";
 import AnimatedLine from "../../components/AnimatedLine/AnimatedLine";
+
+import Hero from "../../layouts/Hero/Hero";
 import ScrollingBanner from "../../components/ScrollingBanner/ScrollingBanner";
 import Services from "../../layouts/Services-Section/Services";
 import About from "../../layouts/About-Section/About";
@@ -11,13 +12,14 @@ import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   return (
-    <div className="home__page">
+    <div className="home__page" id="home__page">
+      <AnimatedLine />
       <main role="main" className="main-content">
         <Hero />
         <Services />
         <About />
         <Contact />
-        <Footer />
+        <Footer /> 
       </main>
     </div>
   );
