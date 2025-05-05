@@ -1,7 +1,4 @@
 import React from "react";
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Hero.scss";
 //import i18n from "../../i18n";
 //import { useTranslation } from "react-i18next";

@@ -18,7 +18,8 @@
 }
 
 :root {
-  --blue-color: #1423DC;
+  /*--blue-color: #1423DC;*/
+  --blue-color: #426390;
   --blue-color-light: #426390;
 
   --nav-background-color: #426390;
@@ -34,9 +35,11 @@
   --hero-padding: 40px 0 0;
   
   --hero-title-margin: 0 0 0 245px;
+  --hero-title-margin-responsive: 0 0 0 80px;
   --hero-title-width: 740px;
 
-  --hero-text-margin: 50px 0 30px 245px;
+  --hero-text-margin: 80px 0 30px 245px;
+  --hero-text-margin-responsive: 80px 0 30px 80px;
   --hero-text-padding: 0;
   --hero-text-width: 310px;
 

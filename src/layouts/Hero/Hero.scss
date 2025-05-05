@@ -17,15 +17,22 @@
     padding: var(--hero-padding);
 
     .hero__title {
-      padding: var(--hero-title-margin);
+      padding: var(--hero-title-margin-responsive);
       z-index: 1;
-      margin-right: -130px;
-      text-indent: calc(50px - 245px);
-      margin-right: -130px;
+      margin-right: -80px;
+      text-indent: calc(50px - 85px);
+      margin-right: -80px;
+
+      @media (min-width: 1080px) {
+        padding: var(--hero-title-margin);
+        margin-right: -130px;
+        text-indent: calc(50px - 245px);
+        margin-right: -130px;
+      }
     }
 
     .h1 {
-      font-size: 3.125rem;
+      font-size: 4.125rem;
       line-height: 105%;
       letter-spacing: 0;
       font-weight: 400;
@@ -34,9 +41,12 @@
     .hero__description {
       position: relative;
       grid-area: text;
-      margin: var(--hero-text-margin);
-      padding: var(--hero-text-padding);
+      margin: var(--hero-text-margin-responsive);
       width: var(--hero-text-width);
+
+      @media (min-width: 1080px) {
+        margin: var(--hero-text-margin);
+      }
     }
     
     .p-l {

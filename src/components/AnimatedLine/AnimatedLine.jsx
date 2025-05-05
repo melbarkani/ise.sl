@@ -15,7 +15,7 @@ export default function AnimatedLine() {
       path,
       { stroke: "#fff" }, // Couleur initiale blanche
       {
-        stroke: "#0000ff", // Couleur finale bleue
+        stroke: "#426390", // Couleur finale bleue
         scrollTrigger: {
           trigger: "#home__page",
           start: "top top",
