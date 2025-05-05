@@ -3,7 +3,7 @@ import "./About.scss";
 
 const About = () => {
   return (
-    <div className="about__page">
+    <section id="about" className="about__page">
       <div className="about__background"></div>
       {/*
       <svg viewBox="0 0 400 1000" className="animated__line__about">
@@ -42,7 +42,7 @@ const About = () => {
           <img src="/public/assets/worker.png" alt="about3" className="about__image" />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -5,6 +5,7 @@
   display: grid;
   grid-template-columns: repeat(14, 1fr);
   position: relative;
+  z-index: 2;
 
   .about__background {
     position: absolute;

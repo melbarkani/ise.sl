@@ -44,7 +44,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="service__page">
+    <section id="services" className="service__page">
       {/* 
         <svg viewBox="0 0 400 1000" className="animated__line_services">
           <path
@@ -71,7 +71,7 @@ const Services = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

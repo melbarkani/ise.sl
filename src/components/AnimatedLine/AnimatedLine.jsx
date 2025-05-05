@@ -18,8 +18,8 @@ export default function AnimatedLine() {
         stroke: "#0000ff", // Couleur finale bleue
         scrollTrigger: {
           trigger: "#home__page",
-          start: "10% 20%",
-          end: "+=600",
+          start: "top top",
+          end: "bottom bottom",
           scrub: true,
         },
       }
@@ -31,7 +31,7 @@ export default function AnimatedLine() {
   return (
     <svg
       className="global-animated-svg"
-      viewBox="0 0 2000 4000"
+      viewBox="0 0 2000 6000"
       preserveAspectRatio="none"
       style={{ height: "auto", width: "100%" }}
     >
@@ -47,7 +47,7 @@ export default function AnimatedLine() {
           a 20 20 0 0 1 -20 20
           h -1680
           a 20 20 0 0 0 -20 20
-          v 999"
+          v 9999"
         stroke="#000"
         strokeWidth="2"
         fill="none"

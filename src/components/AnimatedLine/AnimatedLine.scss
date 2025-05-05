@@ -25,10 +25,16 @@
 
 svg {
   width: 100%;
-  height: auto;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
   padding-left: 70px;
+}
+
+@media screen and (max-width: 1180px) {
+  svg {
+    z-index: 0;
+  }
 }

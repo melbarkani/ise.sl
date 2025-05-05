@@ -1,169 +1,216 @@
 .navbar {
   position: sticky;
-  padding: 50px 80px;
-  z-index: 5001;
+  top: 0;
   width: 100%;
-  height: 80px;
   background-color: var(--nav-background-color);
-  color: var(--nav-text-color);
-  transition: background-color 0.2s ease;
-  overflow: hidden;
+  z-index: 999;
+  transition: all 0.3s ease;
+  padding: 0 50px;
 
-  .header__container {
+  @media screen and (min-width: 1080px) {
+    padding: 0 80px;
+  }
+
+  &.scrolled {
+    border-bottom: .5px solid var(--color-beige);
+    background-color: #fff;
+
+    .navbar__logo img {
+      width: 100px;
+    }
+    
+    button {
+      border: .5px solid var(--nav-background-color);
+      color: var(--nav-background-color);
+    }
+
+    .navbar__menu li a {
+      color: var(--nav-background-color);
+    }
+
+    .burger .line {
+      background-color: var(--nav-background-color);
+    }    
+
+    .navbar__cta img {
+      content: url('/public/assets/quote-icon__hover.png');
+      opacity: 1; 
+    }
+  }
+
+  .navbar__container {
+    max-width: 1400px;
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    max-width: 1440px;
-    height: 100%;
+  }
 
-    .header__logo {
-      img {
-        max-width: 100px;
-      }
+  .navbar__logo img {
+    width: 100px;
+  }
+
+  .button {
+    background: transparent;
+    border: .5px solid var(--color-beige);
+    border-radius: 2rem;
+    padding: .6rem 1.5rem;
+    color: var(--nav-text-color);
+    font-size: 1rem;
+
+    img {
+      width: 1.4rem;
     }
 
-    .btn {
-      background: transparent;
-      color: var(--nav-text-color);
-      border: 1px solid var(--color-beige);
-      border-radius: 2.8rem;
-      height: 2.8rem;
-      padding: 0 1.5rem;
+    &:hover {
+      background: var(--color-beige);
+      color: var(--nav-background-color);
       cursor: pointer;
-      font-family: 'Public Sans', sans-serif;
-      font-size: 1rem;
-      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+  }
+
+  .navbar__cta {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+
+    span {
+      display: none;
+    }
+
+    @media screen and (min-width: 1080px) {
+      margin-left: 2rem;
       display: flex;
       align-items: center;
+      gap: .5rem;
+
+      span {
+        display: block;
+      }
+
+      img {
+        transition: opacity 0.3s ease;
+      }
 
       &:hover {
-        background-color: var(--color-beige);
-        color: var(--nav-background-color);
-      }
-    }
-
-    .create__propal__btn {
-      @extend .btn;
-      margin-left: 5rem;
-      display: flex;
-      align-items: center;
-
-      & img {
-        width: 1.5rem;
-        height: 1.5rem;
-      }
-
-      & span {
-        margin-left: 10px;
-      }
-    }
-
-    .header__menu {
-      margin-left: auto;
-      display: flex;
-      align-items: center;
-
-      .menu-nav {
-        display: flex;
-
-        .menu-nav__list {
-          display: flex;
-          align-items: center;
-          gap: 2.2rem;
-
-          .phone__number {
-            @extend .btn;
-          }
-
-          a {
-            color: var(--nav-text-color);
-            text-decoration: none;
-            font-size: 1.1rem;
-            font-family: 'Public Sans', sans-serif;
-          }
-
-          .lang__switcher {
-            @extend .btn;
-            padding: 0.5rem 1rem; 
-          }
+        
+        img {
+          content: url('/public/assets/quote-icon__hover.png');
+          opacity: 1; 
         }
       }
     }
   }
-}
 
-
-@media screen and (max-width: 1024px) {
-  .navbar {
-    padding: 30px 40px;
-
-    .header__container {
-      .create__propal__btn {
-        margin-left: 2rem;
-        span {
-          display: none; // Icône seule sur tablette
-        }
-      }
-
-      .header__menu {
-        .menu-nav__list {
-          gap: 1rem;
-
-          li:not(.menu-nav__item) {
-            display: none; // On cache le téléphone sur tablette
-          }
-        }
-      }
-    }
+  .navbar__cta, .phone__number,
+  .lang__switcher {
+    @extend .button;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
   }
-}
 
-@media screen and (max-width: 768px) {
-  .navbar {
-    padding: 20px;
+  .phone__number {
 
-    .header__container {
-      flex-wrap: wrap;
-      justify-content: space-between;
+    span {
+      display: none;
+    }
 
-      .create__propal__btn {
-        margin: 0.5rem 0;
-        span {
-          display: none; // icône uniquement
-        }
-      }
+    @media screen and (min-width: 1280px) {
+      display: flex;
 
-      .header__menu {
-        display: none; // cacher le menu principal
-
-        &.open {
-          display: block;
-          width: 100%;
-          margin-top: 1rem;
-
-          .menu-nav__list {
-            flex-direction: column;
-            gap: 1rem;
-
-            .menu-nav__item {
-              text-align: left;
-            }
-          }
-        }
-      }
-
-      .burger__menu {
+      span {
         display: block;
+      }
+    }
+  }
+
+  .burger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 1rem;
+
+    .line {
+      width: 25px;
+      height: 2px;
+      background-color: white;
+      transition: 0.3s;
+    }
+
+    &.open {
+      .line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      .line:nth-child(2) {
+        opacity: 0;
+      }
+      .line:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+    }
+
+    @media (min-width: 1080px) {
+      display: none;
+    }
+  }
+
+  .navbar__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    background-color: var(--nav-background-color);
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
         background: none;
         border: none;
-        font-size: 2rem;
         cursor: pointer;
-        color: var(--nav-text-color);
+      }
+    }
+
+    &.open {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    @media (min-width: 1080px) {
+      position: relative;
+      margin-left: auto;
+      width: auto;
+      height: auto;
+      opacity: 1;
+      visibility: visible;
+      padding: 0;
+      transform: translateY(0);
+      background-color: transparent;
+
+      ul {
+        flex-direction: row;
+        align-items: center;
       }
     }
   }
 }
 
-.burger__menu {
-  display: none; // caché en desktop
+body.no-scroll {
+  overflow: hidden;
+  height: 100vh;
 }

@@ -13,12 +13,15 @@
   li {
     list-style: none;
   }
+
+  scroll-behavior: smooth;
 }
 
 :root {
   --blue-color: #1423DC;
+  --blue-color-light: #426390;
 
-  --nav-background-color: #1423DC;
+  --nav-background-color: #426390;
   --nav-text-color: #fff;
   --color-beige: #E3E3E3;
 
@@ -26,18 +29,18 @@
   --separator-height: 40px;
 
   --hero-grid-template-areas: "title media" "text media" "btn media";
-  --hero-main-color: #1423DC;
+  --hero-main-color: #426390;
   --hero-secondary-color: #fff;
-  --hero-padding: 60px 0 0;
+  --hero-padding: 40px 0 0;
   
-  --hero-title-margin: 0 0 0 84px;
-  --hero-title-width: 870px;
+  --hero-title-margin: 0 0 0 245px;
+  --hero-title-width: 740px;
 
-  --hero-text-margin: 50px 0 30px 275px;
+  --hero-text-margin: 50px 0 30px 245px;
   --hero-text-padding: 0;
   --hero-text-width: 310px;
 
   --hero-media-margin: 20px auto 0 0;
-  --hero-media-width: 780px;
+  --hero-media-width: 775px;
   --hero-media-height: 560px;
 }
