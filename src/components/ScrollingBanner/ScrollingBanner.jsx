@@ -30,7 +30,7 @@ export default function ScrollingBanner() {
     <div className="banner-container">
       <button className="pause-btn" onClick={() => setPaused(!paused)} data-text="Continuar">
         <img
-          src={paused ? "/public/assets/play.png" : "/public/assets/pause.png"}
+          src={paused ? "../../assets/play.png" : "../../assets/pause.png"}
           alt={paused ? "Play" : "Pause"}
           className="pause-icon"
         />

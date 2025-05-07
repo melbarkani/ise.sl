@@ -24,13 +24,13 @@ const About = () => {
       </p>
       <div className="about__images">
         <div className="image-1">
-          <img src="/public/assets/workers.jpg" alt="about1" className="about__image" />
+          <img src="../../assets/workers.jpg" alt="about1" className="about__image" />
         </div>
         <div className="image-2">
-          <img src="/public/assets/women.jpg" alt="about2" className="about__image" />
+          <img src="../../assets/women.jpg" alt="about2" className="about__image" />
         </div>
         <div className="image-3">
-          <img src="/public/assets/worker.png" alt="about3" className="about__image" />
+          <img src="../../assets/worker.png" alt="about3" className="about__image" />
         </div>
       </div>
     </section>

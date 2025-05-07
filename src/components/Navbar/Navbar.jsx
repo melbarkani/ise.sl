@@ -55,11 +55,11 @@ const Navbar = () => {
         </button>
 
         <div className="navbar__logo">
-          <img src="/assets/logo_amarillo.png" alt="Logo" />
+          <img src="../../assets/logo_amarillo.png" alt="Logo" />
         </div>
 
         <button className="navbar__cta">
-          <img src="/public/assets/quote.png" alt="" />
+          <img src="../../assets/quote.png" alt="" />
           <span>{t('navbar.quote')}</span>
         </button>
 
@@ -70,13 +70,13 @@ const Navbar = () => {
             <li><a href="#contact">{t('navbar.contact')}</a></li>
             <li>
               <button className="phone__number" href="tel:+34602629756">
-                <img src="/public/assets/phone-icon.png" alt="" />
+                <img src="../../assets/phone-icon.png" alt="" />
                 <span>{t('navbar.phone__number')}</span>
               </button>
             </li>
             <li>
               <button className="lang__switcher" onClick={toggleLanguage}>
-                <img src="/public/assets/lang-icon.png" alt="" />
+                <img src="../../assets/lang-icon.png" alt="" />
                 <span>{getNextLangLabel()}</span>
               </button>
             </li>
