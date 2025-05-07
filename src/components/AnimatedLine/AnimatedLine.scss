@@ -31,10 +31,12 @@ svg {
   left: 0;
   z-index: 1;
   padding-left: 70px;
-}
 
-@media screen and (max-width: 1180px) {
-  svg {
+  @media screen and (max-width: 1080px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 1180px) {
     z-index: 0;
   }
 }

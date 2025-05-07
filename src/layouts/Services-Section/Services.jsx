@@ -1,10 +1,12 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { useTranslation } from "react-i18next";
 import './Services.scss';
 import ServiceCard from "../../components/ServiceCard/ServiceCard";
 
 const Services = () => {
   const titleRef = useRef(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     gsap.fromTo(titleRef.current,
@@ -15,33 +17,33 @@ const Services = () => {
 
   const services = [
     {
-      title: "Instalaciones eléctricas",
-      description: "Realizamos instalaciones eléctricas residenciales, comerciales e industriales.",
+      title: t("services.installations.title"),
+      description: t("services.installations.description"),
       icon: "/public/assets/electric-plug.png",
       iconHover: "/public/assets/electric-plug_white.png"
     },
     {
-      title: "Automatización KNX",
-      description: "Especialistas en automatización KNX y sistemas Bus.",
+      title: t("services.automation.title"),
+      description: t("services.automation.description"),
       icon: "/public/assets/automation.png"
     },
     {
-      title: "Ventanas eléctricas",
-      description: "Instalación de ventanas eléctricas y ventilación natural inteligente.",
+      title: t("services.windows.title"),
+      description: t("services.windows.description"),
       icon: "/public/assets/window.png",
       iconHover: "/public/assets/window_white.png"
     },
     {
-      title: "Mantenimiento eléctrico",
-      description: "Ofrecemos mantenimiento eléctrico y reformas técnicas.",
+      title: t("services.maintenance.title"),
+      description: t("services.maintenance.description"),
       icon: "/public/assets/maintenance.png"
     },
     {
-      title: "Soluciones técnicas",
-      description: "Proporcionamos soluciones técnicas modernas, seguras y adaptadas.",
+      title: t("services.solutions.title"),
+      description: t("services.solutions.description"),
       icon: "/public/assets/solutions.png"
     }
-  ];
+  ];  
 
   return (
     <section id="services" className="service__page">
@@ -58,13 +60,13 @@ const Services = () => {
       */}
       <div className="service__content">
         <div className="services__title fadeup" ref={titleRef}>
-          <h2>¿ Como podemos ayudarle ?</h2>
+          <h2>{t("services__title")}</h2>
         </div>
 
         <div className="service__cards">
           <ul className="services__container">
             {services.map((service, index) => (
-              <li key={index}>
+              <li className="service__item" key={index}>
                 <ServiceCard {...service} />
               </li>
             ))}

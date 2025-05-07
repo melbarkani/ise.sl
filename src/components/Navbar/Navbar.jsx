@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 import "./Navbar.scss";
 import i18n from "../../i18n";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -53,23 +55,23 @@ const Navbar = () => {
         </button>
 
         <div className="navbar__logo">
-          <img src="/assets/logo.png" alt="Logo" />
+          <img src="/assets/logo_amarillo.png" alt="Logo" />
         </div>
 
         <button className="navbar__cta">
-          <img src="/public/assets/quote-icon.png" alt="" />
-          <span>Solicitar presupuesto</span>
+          <img src="/public/assets/quote.png" alt="" />
+          <span>{t('navbar.quote')}</span>
         </button>
 
         <nav className={`navbar__menu ${isMenuOpen ? "open" : ""}`}>
           <ul>
-            <li><a href="#services">Servicios</a></li>
-            <li><a href="#about">Sobre nosotros</a></li>
-            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#services">{t('navbar.services')}</a></li>
+            <li><a href="#about">{t('navbar.who')}</a></li>
+            <li><a href="#contact">{t('navbar.contact')}</a></li>
             <li>
               <button className="phone__number" href="tel:+34602629756">
                 <img src="/public/assets/phone-icon.png" alt="" />
-                <span>+34 602 62 97 56</span>
+                <span>{t('navbar.phone__number')}</span>
               </button>
             </li>
             <li>

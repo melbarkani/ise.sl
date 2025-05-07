@@ -2,14 +2,6 @@
   z-index: 2;
   position: relative;
 
-  svg {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 1;
-    padding-left: 70px;
-  }
-
   .contact__section__content {
     display: flex;
     -webkit-box-pack: justify;
@@ -24,6 +16,12 @@
     margin-left: auto;
     margin-right: auto;
 
+    @media screen and (max-width: 1080px) {
+      padding: 50px 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
     h2 {
       font-size: 2.125rem;
       line-height: 100%;
@@ -31,12 +29,17 @@
       letter-spacing: 0;
       max-width: 250px;
 
-      margin: 0 0 40px;
-      margin-left: 80px;
+      margin: 0 0 40px 80px;
       margin-right: 50px;
       align-self: center;
       grid-column: span 6 / span 6;
       color: var(--blue-color);
+
+      @media screen and (max-width: 1080px) {
+        margin: 0 0 40px 0;
+        font-size: 2.125rem;
+        max-width: 100%;
+      }
     }
 
     .contact__cards {
@@ -44,16 +47,25 @@
       max-width: 954px;
       width: 100%;
       grid-column: span 6 / span 6;
+
+      @media screen and (max-width: 1080px) {
+        margin: 0 auto;
+        max-width: 100%;
+        width: 100%;
+        padding: 0;
+        flex-direction: column;
+      }
       
       .contact-card {
         -webkit-box-flex: 1;
         -ms-flex: 1;
         flex: 1;
-        border: 1px solid rgba(20, 35, 220, .2);
+        border: .5px solid var(--blue-color-lighter);
 
-        &:not(:last-child) {
-          border-bottom: 1px solid rgba(20, 35, 220, .2);
-          border-right: none;
+        @media screen and (min-width: 1080px) {
+          &:not(:last-child) {
+            border-right: none;
+          }
         }
 
         padding: 30px 40px;
@@ -66,6 +78,12 @@
         color: var(--blue-color);
         -webkit-box-align: center;
         align-items: center;
+
+        @media screen and (max-width: 1080px) {
+          padding: 40px 20px;
+          border: .5px solid var(--blue-color-lighter);
+          width: 100%;
+        }
 
         img {
           margin-bottom: 45px;

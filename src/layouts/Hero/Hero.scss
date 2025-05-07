@@ -1,8 +1,12 @@
 .hero {
   max-width: 100vw;
   overflow: hidden;
+  background-color: var(--hero-main-color);
 
   .hero__content {
+    width: 100%;
+    max-width: 1500px;
+    justify-self: center;
     grid-auto-rows: auto;
     align-content: flex-start;
     -webkit-box-align: start;
@@ -10,9 +14,6 @@
     justify-items: flex-start;
     overflow: hidden;
     position: relative;
-    display: grid;
-    grid-template-areas: var(--hero-grid-template-areas);
-    background-color: var(--hero-main-color);
     color: var(--hero-secondary-color);
     padding: var(--hero-padding);
 
@@ -20,22 +21,28 @@
       padding: var(--hero-title-margin-responsive);
       z-index: 1;
       margin-right: -80px;
-      text-indent: calc(50px - 85px);
+      text-indent: calc(20px - 50px);
       margin-right: -80px;
 
       @media (min-width: 1080px) {
         padding: var(--hero-title-margin);
-        margin-right: -130px;
+        margin-right: -250px;
         text-indent: calc(50px - 245px);
-        margin-right: -130px;
+        margin-right: -250px;
       }
     }
 
     .h1 {
-      font-size: 4.125rem;
+      font-size: 2.8rem;
       line-height: 105%;
       letter-spacing: 0;
-      font-weight: 400;
+      font-weight: 500;
+      max-width: 100%;
+
+      @media screen and (min-width: 1080px) {
+        font-size: 4.125rem;
+        max-width: var(--hero-title-width);
+      }
     }
 
     .hero__description {
@@ -95,6 +102,8 @@
 
     @media screen and (min-width: 1080px) {
       column-gap: 0;
+      display: grid;
+      grid-template-areas: var(--hero-grid-template-areas);
 
       .hero__title {
         text-indent: calc(80px - 245px);

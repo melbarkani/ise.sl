@@ -1,27 +1,29 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./Contact.scss";
-// import { FaQuestionCircle, FaHeadset, FaHardHat } from "react-icons/fa";
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="contact" className="contact__section">
       <div className="contact__section__content">
-        <h2>¿Cómo contactarnos?</h2>
+        <h2>{t('contact__title')}</h2>
         <div className="contact__cards">
           <a className="contact-card" href="#faq">
             <img src="/assets/question.png" alt="FAQ Icon" className="help-card__icon" />
-            <span>Preguntas frecuentes</span>
-            <p>Encuentra la respuesta a las preguntas que más nos hacen</p>
+            <span>{t('contact__faq')}</span>
+            <p>{t('contact__faq__description')}</p>
           </a>
           <a className="contact-card" href="#message">
             <img src="/assets/client-service.png" alt="Client Service Icon" className="help-card__icon" />
-            <span>Envíanos un mensaje</span>
-            <p>Contacta con nuestro equipo para ser orientado según tus necesidades</p>
+            <span>{t('contact__message')}</span>
+            <p>{t('contact__message__description')}</p>
           </a>
           <a className="contact-card" href="#call">
-            <img src="/assets/question.png" alt="Quick Assistance Icon" className="help-card__icon" />
-            <span>Asistencia rápida por llamada</span>
-            <p>¿Una situación urgente? Nuestro servicio de asistencia te responderá rápidamente</p>
+            <img src="/assets/phone.png" alt="Quick Assistance Icon" className="help-card__icon" />
+            <span>{t('contact__call')}</span>
+            <p>{t('contact__call__description')}</p>
           </a>
         </div>
       </div>

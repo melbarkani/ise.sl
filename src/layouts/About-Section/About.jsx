@@ -1,35 +1,26 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./About.scss";
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="about" className="about__page">
       <div className="about__background"></div>
-      {/*
-      <svg viewBox="0 0 400 1000" className="animated__line__about">
-        <path
-          d="M 1016 0 L 1016 720 Q 1016 820 916 820 L -700 820 Q -800 820 -800 920 L -800 1000"
-          stroke="#1423DC"
-          strokeWidth="2"
-          fill="none"
-        />
-      </svg>
-      */}
       <div className="about__title">
-        <h2>Sobre Nosotros</h2>
+        <h2>{t('about__title')}</h2>
       </div>
       <div className="about__countries">
         <div className="spain">
-          España
+          {t('about__spain')}
         </div>
         <div className="germany">
-          Alemania
+          {t('about__germany')}
         </div>
       </div>
       <p className="about__text">
-        Somos una empresa especializada en instalaciones eléctricas y automatización KNX. 
-        Nuestro equipo de expertos está comprometido en ofrecer soluciones técnicas modernas, 
-        seguras y adaptadas a las necesidades de nuestros clientes.
+        {t('about__description')}
       </p>
       <div className="about__images">
         <div className="image-1">

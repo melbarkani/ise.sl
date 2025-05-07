@@ -36,6 +36,11 @@
         margin-block-start: 0.83em;
         margin-block-end: 0.83em;
 
+        @media screen and (max-width: 1080px) {
+          font-size: 2.5rem;
+          font-weight: 600;
+        }
+
         &::before {
           content: "";
           height: 100%;
@@ -71,8 +76,24 @@
       position: relative;
       width: 100%;
       display: flex;
+
+      flex-wrap: wrap;
       transition-property: transform;
       box-sizing: content-box;
+
+      @media screen and (max-width: 1080px) {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+      
+        // Cacher la scrollbar (Chrome, Safari)
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      
+        // Firefox
+        scrollbar-width: none;
+      }      
 
       li {
         -webkit-box-flex: 1;
@@ -89,14 +110,21 @@
         -webkit-box-pack: start;
         -ms-flex-pack: start;
         justify-content: flex-start;
-        border: 1px solid rgba(20, 35, 220, .2);
         margin-left: 0;
         color: var(--blue-color);
+        border: .5px solid var(--blue-color-lighter);
+        transition: all 0.3s ease-in-out;
 
         &:hover {
           background-color: var(--blue-color);
           cursor: pointer;
           color: #fff;
+        }
+
+        @media screen and (min-width: 1080px) {
+          li:not(:last-child) {
+            border-right: none;
+          }
         }
       }
     }
