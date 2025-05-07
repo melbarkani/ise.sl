@@ -1,8 +1,8 @@
 import React from "react";
 import "./Hero.scss";
 import { useTranslation } from "react-i18next";
-
 import ScrollingBanner from "../../components/ScrollingBanner/ScrollingBanner";
+import heroImg from "../../assets/hero-img.jpg"; 
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -17,7 +17,7 @@ const Hero = () => {
           {t("hero__description")}
         </p>
         <picture className="hero__media">
-          <img src="/public/assets/hero-img.jpg" alt="hero image" />
+          <img src={heroImg} alt="hero image" />
         </picture>
       </div>
 
