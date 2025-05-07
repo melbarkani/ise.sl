@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './ScrollingBanner.scss';
 
+import pause__icon from "../../assets/pause.png";
+import play__icon from "../../assets/play.png";
+
 const infos = [
   "Intervenimos en España 🇪🇸 y Alemania 🇩🇪",
   "Instalaciones eléctricas residenciales, comerciales e industriales",
@@ -30,7 +33,7 @@ export default function ScrollingBanner() {
     <div className="banner-container">
       <button className="pause-btn" onClick={() => setPaused(!paused)} data-text="Continuar">
         <img
-          src={paused ? "../../assets/play.png" : "../../assets/pause.png"}
+          src={paused ? pause__icon : play__icon}
           alt={paused ? "Play" : "Pause"}
           className="pause-icon"
         />

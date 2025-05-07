@@ -2,6 +2,10 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import "./About.scss";
 
+import workersImg from "../../assets/workers.jpg";
+import womenImg from "../../assets/women.jpg";
+import workerImg from "../../assets/worker.png";
+
 const About = () => {
   const { t } = useTranslation();
 
@@ -24,13 +28,13 @@ const About = () => {
       </p>
       <div className="about__images">
         <div className="image-1">
-          <img src="../../assets/workers.jpg" alt="about1" className="about__image" />
+          <img src={workersImg} alt="about1" className="about__image" />
         </div>
         <div className="image-2">
-          <img src="../../assets/women.jpg" alt="about2" className="about__image" />
+          <img src={womenImg} alt="about2" className="about__image" />
         </div>
         <div className="image-3">
-          <img src="../../assets/worker.png" alt="about3" className="about__image" />
+          <img src={workerImg} alt="about3" className="about__image" />
         </div>
       </div>
     </section>

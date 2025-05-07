@@ -4,6 +4,14 @@ import { useTranslation } from "react-i18next";
 import './Services.scss';
 import ServiceCard from "../../components/ServiceCard/ServiceCard";
 
+import electric__plug__icon from "../../assets/electric-plug.png";
+import electric__plug__icon__white from "../../assets/electric-plug_white.png";
+import automation__icon from "../../assets/automation.png";
+import window__icon from "../../assets/window.png";
+import window__icon__white from "../../assets/window_white.png";
+import maintenance__icon from "../../assets/maintenance.png";
+import solutions__icon from "../../assets/solutions.png";
+
 const Services = () => {
   const titleRef = useRef(null);
   const { t } = useTranslation();
@@ -19,29 +27,29 @@ const Services = () => {
     {
       title: t("services.installations.title"),
       description: t("services.installations.description"),
-      icon: "../../assets/electric-plug.png",
-      iconHover: "../../assets/electric-plug_white.png"
+      icon: electric__plug__icon,
+      iconHover: electric__plug__icon__white
     },
     {
       title: t("services.automation.title"),
       description: t("services.automation.description"),
-      icon: "../../assets/automation.png"
+      icon: automation__icon
     },
     {
       title: t("services.windows.title"),
       description: t("services.windows.description"),
-      icon: "../../assets/window.png",
-      iconHover: "../../assets/window_white.png"
+      icon: window__icon,
+      iconHover: window__icon__white
     },
     {
       title: t("services.maintenance.title"),
       description: t("services.maintenance.description"),
-      icon: "../../assets/maintenance.png"
+      icon: maintenance__icon
     },
     {
       title: t("services.solutions.title"),
       description: t("services.solutions.description"),
-      icon: "../../assets/solutions.png"
+      icon: solutions__icon
     }
   ];  
 

@@ -3,6 +3,11 @@ import { useTranslation } from 'react-i18next';
 import "./Navbar.scss";
 import i18n from "../../i18n";
 
+import logo from "../../assets/logo_amarillo.png";
+import quote__icon from "../../assets/quote.png";
+import phone__icon from "../../assets/phone-icon.png";
+import lang__icon from "../../assets/lang-icon.png";
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -55,11 +60,11 @@ const Navbar = () => {
         </button>
 
         <div className="navbar__logo">
-          <img src="../../assets/logo_amarillo.png" alt="Logo" />
+          <img src={logo} alt="Logo" />
         </div>
 
         <button className="navbar__cta">
-          <img src="../../assets/quote.png" alt="" />
+          <img src={quote__icon} alt="" />
           <span>{t('navbar.quote')}</span>
         </button>
 
@@ -70,13 +75,13 @@ const Navbar = () => {
             <li><a href="#contact">{t('navbar.contact')}</a></li>
             <li>
               <button className="phone__number" href="tel:+34602629756">
-                <img src="../../assets/phone-icon.png" alt="" />
+                <img src={phone__icon} alt="" />
                 <span>{t('navbar.phone__number')}</span>
               </button>
             </li>
             <li>
               <button className="lang__switcher" onClick={toggleLanguage}>
-                <img src="../../assets/lang-icon.png" alt="" />
+                <img src={lang__icon} alt="" />
                 <span>{getNextLangLabel()}</span>
               </button>
             </li>
