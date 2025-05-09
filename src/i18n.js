@@ -53,6 +53,8 @@ const resources = {
       contact__call__description: '¿Una situación urgente ? Nuestro servicio de asistencia te responderá rápidamente',
       footer__terms: 'Términos y condiciones',
       footer__privacy: 'Política de privacidad',
+      maintenance__title: 'Página en mantenimiento',
+      maintenance__description: 'Estamos realizando tareas de mantenimiento. Por favor, vuelve más tarde o contacta con nosotros por teléfono o correo electrónico.',
     },
   },
   de: {
@@ -106,6 +108,8 @@ const resources = {
       contact__call__description: 'Haben Sie eine dringende Situation? Unseren Notdienst wird Ihnen schnell antworten',
       footer__terms: 'Allgemeine Geschäftsbedingungen',
       footer__privacy: 'Datenschutz',
+      maintenance__title: 'Seite in Wartung',
+      maintenance__description: 'Wir führen Wartungsarbeiten durch. Bitte kommen Sie später zurück oder kontaktieren Sie uns telefonisch oder per E-Mail.',
     },
   },
 };

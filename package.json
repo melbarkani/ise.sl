@@ -1,6 +1,6 @@
 {
   "name": "instalaciones_electricas_elbarkani",
-  "homepage": "https://melbarkani.github.io/ise.sl/",
+  "homepage": "https://instalaciones-elbarkani.es/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -19,7 +19,8 @@
     "i18next-http-backend": "^3.0.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-i18next": "^15.4.1"
+    "react-i18next": "^15.4.1",
+    "react-router-dom": "^7.6.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",

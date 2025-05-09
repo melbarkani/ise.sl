@@ -11,6 +11,7 @@ import window__icon from "../../assets/window.png";
 import window__icon__white from "../../assets/window_white.png";
 import maintenance__icon from "../../assets/maintenance.png";
 import solutions__icon from "../../assets/solutions.png";
+import solutions__icon__white from "../../assets/solutions_white.png";
 
 const Services = () => {
   const titleRef = useRef(null);
@@ -33,7 +34,8 @@ const Services = () => {
     {
       title: t("services.automation.title"),
       description: t("services.automation.description"),
-      icon: automation__icon
+      icon: automation__icon,
+      iconHover: automation__icon
     },
     {
       title: t("services.windows.title"),
@@ -44,12 +46,14 @@ const Services = () => {
     {
       title: t("services.maintenance.title"),
       description: t("services.maintenance.description"),
-      icon: maintenance__icon
+      icon: maintenance__icon,
+      iconHover: maintenance__icon
     },
     {
       title: t("services.solutions.title"),
       description: t("services.solutions.description"),
-      icon: solutions__icon
+      icon: solutions__icon,
+      iconHover: solutions__icon__white
     }
   ];  
 
