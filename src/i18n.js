@@ -55,6 +55,20 @@ const resources = {
       footer__privacy: 'Política de privacidad',
       maintenance__title: 'Página en mantenimiento',
       maintenance__description: 'Estamos realizando tareas de mantenimiento. Por favor, vuelve más tarde o contacta con nosotros por teléfono o correo electrónico.',
+      continue: 'Continuar',
+      pause: 'Pausar',
+      infos: [
+        "Intervenimos en España 🇪🇸 y Alemania 🇩🇪",
+        "Instalaciones eléctricas residenciales, comerciales e industriales",
+        "Especialistas en automatización KNX y sistemas Bus",
+        "Ventanas eléctricas y ventilación natural inteligente",
+        "Mantenimiento eléctrico y reformas técnicas",
+        "Soluciones técnicas modernas, seguras y adaptadas",
+        "Contáctanos: +34 602 62 97 56 / +49 1520 4893071",
+        "Proyectos personalizados, eficientes y fiables",
+        "Instalaciones conforme a las normativas europeas 🇪🇺",
+        "Pide tu presupuesto sin compromiso"
+      ]      
     },
   },
   de: {
@@ -110,6 +124,20 @@ const resources = {
       footer__privacy: 'Datenschutz',
       maintenance__title: 'Seite in Wartung',
       maintenance__description: 'Wir führen Wartungsarbeiten durch. Bitte kommen Sie später zurück oder kontaktieren Sie uns telefonisch oder per E-Mail.',
+      continue: 'Fortfahren',
+      pause: 'Pause',
+      infos: [
+        "Wir sind tätig in Spanien 🇪🇸 und Deutschland 🇩🇪",
+        "Elektroinstallationen für Wohn-, Geschäfts- und Industriegebäude",
+        "Spezialisten für KNX-Automatisierung und Bus-Systeme",
+        "Elektrische Fenster und intelligente natürliche Belüftung",
+        "Elektrische Wartung und technische Renovierungen",
+        "Moderne, sichere und angepasste technische Lösungen",
+        "Kontaktieren Sie uns: +34 602 62 97 56 / +49 1520 4893071",
+        "Individuelle, effiziente und zuverlässige Projekte",
+        "Installationen gemäß den europäischen Normen 🇪🇺",
+        "Fordern Sie ein unverbindliches Angebot an"
+      ]
     },
   },
 };

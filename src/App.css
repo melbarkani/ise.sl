@@ -19,9 +19,12 @@
 
 :root {
   /*--blue-color: #1423DC;*/
+  --yellow-color: #F2C94C;
   --blue-color: #426390;
   --blue-color-lighter: #42639037;
   --blue-color-light: #426390;
+
+  --navbar-height: 120px;
 
   --nav-background-color: #426390;
   --nav-text-color: #fff;
@@ -33,18 +36,25 @@
   --hero-grid-template-areas: "title media" "text media" "btn media";
   --hero-main-color: #426390;
   --hero-secondary-color: #fff;
-  --hero-padding: 40px 0 0 0;
+  --hero-padding-mobile: 40px 20px 0 20px;
+  --hero-padding-tablet: 40px 40px 0 40px;
+  --hero-padding-desktop: 40px 80px 0 80px;
   
-  --hero-title-margin: 0 0 0 245px;
-  --hero-title-margin-responsive: 0 0 0 50px;
-  --hero-title-width: 940px;
+  --hero-title-margin-mobile: 0 0 0 40px;
+  --hero-title-margin-tablet: 0 0 0 20px;
+  --hero-title-margin-desktop: 0 0 0 180px;
 
-  --hero-text-margin: 80px 0 30px 245px;
-  --hero-text-margin-responsive: 20px 0 30px 50px;
+  --hero-title-width-tablet: 640px;
+  --hero-title-width-desktop: 980px;
+
+  --hero-text-margin-mobile: 20px 0 30px 40px;
+  --hero-text-margin-tablet: 20px 0 30px 20px;
+  --hero-text-margin-desktop: 80px 340px 30px 180px;
   --hero-text-padding: 0;
   --hero-text-width: 310px;
 
-  --hero-media-margin: 20px auto 0 0;
+  --hero-btn-margin-mobile: 20px auto 0 0;
+  --hero-media-margin-desktop: 20px auto 0 -300px;
   --hero-media-width: 775px;
   --hero-media-height: 560px;
 }

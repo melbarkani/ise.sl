@@ -1,11 +1,42 @@
 <!doctype html>
-<html lang="en">
+<html lang="es"> <!-- ⚠️ Utilise 'es' si le site est en espagnol -->
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/public/logo_amarillo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ✅ Favicon -->
+    <link rel="icon" type="image/png" href="/logo_amarillo.png" />
+
+    <!-- ✅ Titre de base (sera remplacé dynamiquement par react-helmet-async) -->
     <title>Instalaciones y Servicios El Barkani S.L.</title>
+
+    <!-- ✅ Description pour le référencement -->
+    <meta
+      name="description"
+      content="Instalaciones eléctricas profesionales en toda España. Solicita tu presupuesto gratuito con El Barkani S.L."
+    />
+
+    <!-- ✅ SEO base -->
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="El Barkani S.L." />
+
+    <!-- ✅ Open Graph pour réseaux sociaux -->
+    <meta property="og:title" content="Instalaciones y Servicios El Barkani S.L." />
+    <meta property="og:description" content="Especialistas en instalaciones eléctricas. Confía en El Barkani para tus proyectos." />
+    <meta property="og:image" content="https://instalaciones-elbarkani.es/og-image.jpg" /> <!-- Remplace par ton image -->
+    <meta property="og:url" content="https://instalaciones-elbarkani.es/" />
+    <meta property="og:type" content="website" />
+
+    <!-- ✅ Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Instalaciones y Servicios El Barkani S.L." />
+    <meta name="twitter:description" content="Especialistas en instalaciones eléctricas en toda España." />
+    <meta name="twitter:image" content="https://instalaciones-elbarkani.es/og-image.jpg" />
+
+    <!-- ✅ Canonical URL -->
+    <link rel="canonical" href="https://instalaciones-elbarkani.es/" />
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>

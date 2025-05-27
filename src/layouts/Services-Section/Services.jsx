@@ -10,6 +10,7 @@ import automation__icon from "../../assets/automation.png";
 import window__icon from "../../assets/window.png";
 import window__icon__white from "../../assets/window_white.png";
 import maintenance__icon from "../../assets/maintenance.png";
+import maintenance__icon__white from "../../assets/maintenance_white.png";
 import solutions__icon from "../../assets/solutions.png";
 import solutions__icon__white from "../../assets/solutions_white.png";
 
@@ -47,7 +48,7 @@ const Services = () => {
       title: t("services.maintenance.title"),
       description: t("services.maintenance.description"),
       icon: maintenance__icon,
-      iconHover: maintenance__icon
+      iconHover: maintenance__icon__white
     },
     {
       title: t("services.solutions.title"),
